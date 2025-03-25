@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Us | Wedding Web</title>
+    <link rel="stylesheet" href="styleabcon.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
+</head>
+<body>
+    <header>
+        <a href="index.html" class="logo">Wedding</a>
+        <ul class="nav">
+            <li><a href="C:\Users\91797\wedding\weddingweb\maincel\index.html">Home</a></li>
+            <li><a href="C:\Users\91797\wedding\weddingweb\maincel\aboutus.html">About</a></li>
+            <li><a href="C:\Users\91797\wedding\weddingweb\contact.html" class="active">Contact</a></li>
+        </ul>
+    </header>
+
+    <section class="contact-section">
+        <h1 class="fade-in">Contact Us</h1>
+        <form action="#" class="form-slide-in">
+            <label for="name">Name:</label>
+            <input type="text" id="name" required>
+
+            <label for="email">Email:</label>
+            <input type="email" id="email" required>
+
+            <label for="message">Message:</label>
+            <textarea id="message" required></textarea>
+
+            <button type="submit" class="btn-hover">Send</button>
+        </form>
+    </section>
+
+    <footer>
+        <p>&copy; 2025 Wedding Web. All rights reserved.</p>
+    </footer>
+
+    <script>
+        gsap.from(".fade-in", { opacity: 0, y: -50, duration: 1.5 });
+        gsap.from(".form-slide-in", { opacity: 0, x: 100, duration: 1.5, delay: 0.5 });
+    </script>
+</body>
+</html>
