@@ -37,6 +37,15 @@ header{
     z-index: 1300;
 }
 
+/* header .whole-nav{
+    display: flex;
+    margin-right: 30px;
+} */
+
+header a{
+    margin-right: 1px;
+}
+
 header .active{
    /* position: absolute; */
    background: #ffffff;
@@ -66,7 +75,7 @@ header .active{
 .nav li{
     list-style: none;
     /* margin-right: 40px; */
-    margin: 0 20px;
+    margin: 0 17px;
 }
 
 .nav li a{
@@ -77,7 +86,7 @@ header .active{
     cursor: pointer;
     transition: 0.5s;
     font-weight: 300;
-    padding: 7px;
+    padding: 1px;
 }
 
 .nav li a:hover , .nav li a.active{
@@ -512,4 +521,41 @@ section .row{
 
 .vender1 h1{
     margin-left: 500px;
+}
+
+/* .google_translate_element {
+    height: 20px;
+    width: 20px;
+
+} */
+
+.language_1{
+    margin-left: 100px;
+}
+
+
+/* Scale the entire translate widget */
+#google_translate_element {
+    transform: scale(0.7);  /* Adjust scale as needed */
+    transform-origin: left center;
+}
+
+/* Style the language dropdown */
+.goog-te-combo {
+    font-size: 18px !important;
+    padding: 8px;
+    /* margin-left: 10px; */
+    border-radius: 5px;
+    background-color: transparent; /* Change background */
+    border: 1px solid #ccc;
+}
+
+/* Hide the Google branding */
+.goog-te-gadget span {
+    display: none !important;
+}
+
+/* Remove Google top bar */
+.goog-te-banner-frame {
+    display: none !important;
 }
